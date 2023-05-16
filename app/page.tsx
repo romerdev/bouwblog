@@ -14,7 +14,7 @@ export default function Home() {
               height={450}
               priority
             />
-            <div className="absolute bottom-0 right-0 xl:translate-x-1/4 translate-y-1/2 md:translate-y-1/4 h-72 md:h-80 bg-white p-14 flex justify-center items-center rounded-full font-light md:text-lg aspect-square">
+            <div className="absolute bottom-0 right-0 xl:translate-x-1/4 translate-y-1/2 md:translate-y-1/4 h-72 w-72 md:h-80 md:w-80 bg-white p-14 flex justify-center items-center rounded-full font-light md:text-lg">
               <p>In september start ik met de opleiding <strong>Built Environment</strong> op de Hogeschool van Amsterdam. Op deze website hou ik bij wat ik allemaal leer.</p>
             </div>
         </div>
