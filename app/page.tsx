@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Wrapper from "@/components/wrapper"
+import Card from "@/components/card"
 
 export default function Home() {
   return (
@@ -15,18 +16,20 @@ export default function Home() {
               priority
             />
             <div className="md:absolute md:bottom-0 right-0 xl:translate-x-1/4 md:translate-y-1/4 md:h-80 md:w-80 md:bg-stone-100 pt-4 md:p-14 md:flex justify-center items-center md:rounded-full font-light text-lg">
-              <p>In september start ik met de opleiding <strong>Built Environment</strong> op de Hogeschool van Amsterdam. Op deze website hou ik bij wat ik allemaal leer.</p>
+              <p>In september 2023 start ik met de opleiding <strong>Built Environment</strong> op de Hogeschool van Amsterdam. Op deze website hou ik bij wat ik allemaal leer.</p>
             </div>
         </div>
 
-        <ul className="grid md:grid-cols-2 xl:grid-cols-3 gap-12">
-          <li className="bg-amber-100 p-8 md:p-12 flex flex-col justify-end">
-            <h2 className="text-light text-3xl md:text-4xl mb-4">It&apos;s official!</h2>
-            <p className="md:text-lg">De inschrijving is rond! 🍾 In september 2023 kan ik officieel beginnen met de opleiding!</p>
+        <ul className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-12">
+          <li>
+            <Card title={"It's official!"} date={"2023-05-20"} colors={["bg-amber-100", "bg-amber-200"]}>
+              De inschrijving is rond! 🍾 In september 2023 kan ik officieel beginnen met de opleiding!
+            </Card>
           </li>
-          <li className="bg-blue-100 p-8 md:p-12">
-            <h2 className="text-light text-3xl md:text-4xl mb-4">Open dag bijgewoond</h2>
-            <p className="md:text-lg">Als onderdeel van de studiekeuzecheck moesten we in groepsverband werken aan een oplossing op het vraagstuk: &lsquo;Amsterdam moet in 2050 volledig autovrij zijn&rsquo;. </p>
+          <li>
+            <Card title={"Open dag bijgewoond"} date={"2023-05-14"} colors={["bg-blue-100", "bg-blue-200"]}>
+              Moet Amsterdam in 2050 volledig autovrij zijn? Als onderdeel van de studiekeuzecheck moesten we in groepsverband werken aan een oplossing op dit vraagstuk.
+            </Card>
           </li>
         </ul>
       </Wrapper>
