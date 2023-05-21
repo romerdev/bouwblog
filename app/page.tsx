@@ -27,7 +27,7 @@ export default function Home() {
             </Card>
           </li>
           <li>
-            <Card title={"Open dag bijgewoond"} date={"2023-05-14"} colors={["bg-blue-100", "bg-blue-200"]}>
+            <Card title={"Open dag bijgewoond"} date={"2023-04-06"} colors={["bg-blue-100", "bg-blue-200"]}>
               Moet Amsterdam in 2050 volledig autovrij zijn? Als onderdeel van de studiekeuzecheck moesten we in groepsverband werken aan een oplossing op dit vraagstuk.
             </Card>
           </li>
