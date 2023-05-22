@@ -1,12 +1,21 @@
+"use client";
+
 import dayjs from "dayjs";
 import relativeTime from  "dayjs/plugin/relativeTime";
 require('dayjs/locale/nl')
 dayjs.extend(relativeTime);
 dayjs.locale("nl")
+import { useState, useEffect } from "react";
 
 export default function Card({children, title, date, colors}: {children: React.ReactNode, title: string, date: string, colors: Array<string>;}) {
- 
-const formattedDate: string =dayjs().to(dayjs(date));
+  const [formattedDate, setFormattedDate] = useState(dayjs().to(dayjs(date)));
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setFormattedDate(dayjs().to(dayjs(date)))
+    }, 5000);
+    return () => clearInterval(id);
+  }, [formattedDate])
 
   return (
     <div className={`${colors[0]} p-8 md:p-12 md:pt-14 flex flex-col justify-end h-full relative`}>
