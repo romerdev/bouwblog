@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image"
 import Wrapper from "@/components/wrapper"
 import Card from "@/components/card"
@@ -22,7 +24,7 @@ export default function Home() {
 
         <ul className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-12">
           <li>
-            <Card title={"It's official!"} date={"2023-05-20"} colors={["bg-amber-100", "bg-amber-200"]}>
+            <Card title={"It's official!"} date={"2023-05-22 19:35"} colors={["bg-amber-100", "bg-amber-200"]}>
               De inschrijving is rond! 🍾 In september 2023 kan ik officieel beginnen met de opleiding!
             </Card>
           </li>
