@@ -15,14 +15,14 @@ export default function Home() {
               height={450}
               priority
             />
-            <div className="md:absolute md:bottom-0 right-0 xl:translate-x-1/4 md:translate-y-1/4 md:h-80 md:w-80 md:bg-stone-100 pt-4 md:p-14 md:flex justify-center items-center md:rounded-full font-light text-lg">
+            <div className="md:absolute md:bottom-0 md:text-center right-0 xl:translate-x-1/4 md:translate-y-1/4 md:h-80 md:w-80 md:bg-stone-100 pt-4 md:p-14 md:flex justify-center items-center md:rounded-full font-light text-lg">
               <p>In september 2023 start ik met de opleiding <strong>Built Environment</strong> op de Hogeschool van Amsterdam. Op deze website hou ik bij wat ik allemaal leer.</p>
             </div>
         </div>
 
         <ul className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-12">
           <li>
-            <Card title={"It's official!"} date={"2023-05-22 19:35"} colors={["bg-amber-100", "bg-amber-200"]}>
+            <Card title={"It's official!"} date={"2023-06-07 11:13"} colors={["bg-amber-100", "bg-amber-200"]}>
               De inschrijving is rond! 🍾 In september 2023 kan ik officieel beginnen met de opleiding!
             </Card>
           </li>
